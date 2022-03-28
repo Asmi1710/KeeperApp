@@ -1,9 +1,10 @@
-import React from "react";
+import React, {useState} from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import Note from "./Note";
-import notes from "../NoteDetail";
+//import notes from "../NoteDetail";
 import Sidebar from "./Sidebar";
+import CreateArea from "./CreateArea";
 
 
 // function getNote(note){
@@ -12,21 +13,38 @@ import Sidebar from "./Sidebar";
 // }
 
 function App(){
+    
+    const [notes,setNotes]=useState ([ {title :"", content :""}]);
+
+    function handleAdd(next){
+        setNotes(prevNotes=>{
+            return ([...prevNotes,{title:next.head,content:next.content}])
+        });
+        console.log(notes);
+        
+    }
+
+    
     return (
         <div className="container">
-            <Sidebar />            
-            <Header /> 
-            <div>
-                <input placeholder="Title of project" />
+            <Sidebar />
+            <div className="noteSection">
+                <Header />
+                <div className="inputArea">
+                    <input className="projectTitle" placeholder="Title of project" />    
+                </div>
+                <CreateArea onAdd={handleAdd}/>
+                <div>
                 {notes.map(note=>
-                <Note 
-                key={note.id}
-                title={note.head} 
-                note={note.content} />
-                )}
-            </div>
+                    <Note 
+                    key={note.id}
+                    title={note.title} 
+                    note={note.content} />
+                    )}
+                </div>
          {/* <Note title="Heading" note="Type the note" /> */}
-            <Footer />
+                <Footer />
+            </div>
         </div>
     );
 }

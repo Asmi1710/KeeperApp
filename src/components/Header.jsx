@@ -13,7 +13,7 @@ function Header (){
 
     return (
     <header >
-        <h1 className="title">Note-It</h1>
+        <h1 className="title">Note-<span>🖋</span>t</h1>
         <h1 className="time">{time}</h1>
     </header>);
 }
