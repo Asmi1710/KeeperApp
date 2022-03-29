@@ -67,10 +67,24 @@ span {
 
 .inputArea{
     position: relative;
-    width: 250px;
+    width: 300px;
     margin: 10px auto 0;
 }
 
+.inputArea button {
+    position: absolute;
+    right: 25px;
+    bottom: -10px;
+    background: #5B7DB1;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 41px;
+    height: 41px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    outline: none;
+}
 .projectTitle{
     border: 1px solid rgba(252, 252, 252, 0.4);
     background-color: rgba(252, 252, 252, 0.2);
@@ -78,13 +92,16 @@ span {
     border-radius: 5px;
     font-family: "Source Sans Pro", sans-serif;
     padding: 10px 15px;
-    display: inline-block;
+    /* display: inline-block; */
+    display: inline;
     width: 250px;
     text-align: center;
     font-size: 18px;
     color: black;
     font-weight: 300;
 }
+
+
 
 form {
     position: relative;
