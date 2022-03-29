@@ -2,7 +2,6 @@ import React, {useState} from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import Note from "./Note";
-//import notes from "../NoteDetail";
 import Sidebar from "./Sidebar";
 import CreateArea from "./CreateArea";
 
@@ -24,6 +23,10 @@ function App(){
         
     }
 
+    function handleDelete(){
+
+    }
+
     
     return (
         <div className="container">
@@ -35,9 +38,11 @@ function App(){
                 </div>
                 <CreateArea onAdd={handleAdd}/>
                 <div>
-                {notes.map(note=>
+                {notes.map((note,index)=>
                     <Note 
-                    key={note.id}
+                    key={index}
+                    id={index}
+                    delete={handleDelete}
                     title={note.title} 
                     note={note.content} />
                     )}

@@ -11,7 +11,8 @@ function CreateArea(props) {
             {
                 return ({head:value, content:prevValue.content });
             }
-            else{
+            else
+            {
                 return ({head:prevValue.head, content:value})
             }
         }
