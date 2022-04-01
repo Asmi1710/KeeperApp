@@ -9,12 +9,20 @@ function ProjectTitle(props){
         var name = event.target.value;
         setProjectTitle(name);
     }
-
-
+    
 
     return (<div className="inputArea">
           <input onChange={handleChange} className="projectTitle" placeholder="Untitled" value={projectTitle} />
-          <button onClick={props.onSave}>Save</button>
+          <button className="save" onClick={(event)=>{
+              event.preventDefault();
+              props.onSave(projectTitle);
+          }}
+          >Save</button>
+          <button className="list" onClick={(event)=>{
+              event.preventDefault();
+              props.onAddList(props.id);
+          }}
+          >Add-To-List</button>
       </div>);
 }
 

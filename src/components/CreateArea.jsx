@@ -15,6 +15,12 @@ function CreateArea(props) {
             {
                 return ({head:prevValue.head, content:value})
             }
+            // you can also write:
+            // return {
+            //   ...prevValue,
+            //   [name]:value
+            // };
+
         }
 
         );
