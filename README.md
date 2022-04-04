@@ -1,3 +1,16 @@
+## Note-It:
+
+A React application that enables you to create your notes and organize them under separate titles which appear in the sidebar. This will help you to organise your thoughts, your to-do lists, daily appointments, random ideas, etc in an effective manner. This is version 1.0 and very basic with many more features to be added in the future. 
+
+## Deployed on github
+
+link-> https://asmi1710.github.io/Note-It/
+
+## Deployed on Firebase
+
+link-> soon to be updated
+
+
 <<<<<<< HEAD
 # Getting Started with Create React App
 
