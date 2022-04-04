@@ -3,7 +3,7 @@ import React, {useState} from "react";
 
 function ProjectTitle(props){
     
-    const[projectTitle,setProjectTitle]=useState("untitled");
+    const[projectTitle,setProjectTitle]=useState("");
 
     function handleChange(event){
         var name = event.target.value;
@@ -20,7 +20,7 @@ function ProjectTitle(props){
           >Save</button>
           <button className="list" onClick={(event)=>{
               event.preventDefault();
-              props.onAddList(props.id);
+              props.onAddList(props.id,projectTitle);
           }}
           >Add-To-List</button>
       </div>);
