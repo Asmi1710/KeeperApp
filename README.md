@@ -2,13 +2,54 @@
 
 A React application that enables you to create your notes and organize them under separate titles which appear in the sidebar. This will help you to organise your thoughts, your to-do lists, daily appointments, random ideas, etc in an effective manner. This is version 1.0 and very basic with many more features to be added in the future. 
 
-## Deployed on github
+## Deployed using codeSandbox
 
-link-> https://asmi1710.github.io/Note-It/
+link-> https://blm2wr.csb.app/
 
 ## Deployed on Firebase
 
 link-> soon to be updated
+
+## Screenshot
+
+![Screen Shot 2022-04-17 at 1 03 18 AM](https://user-images.githubusercontent.com/96052563/163689170-1d2feace-f454-4a7c-800e-48b5d24b737f.png)
+
+![Screen Shot 2022-04-17 at 1 08 32 AM](https://user-images.githubusercontent.com/96052563/163689192-61434f93-2c9f-4a0b-bb9f-6f1828000c7e.png)
+
+## Different features of the website
+
+* On loading, it displays the layout with current timing as per time-zone.
+* You can give title to project, add notes and delete any of them.
+* On pressing save, this project gets added to the list on the sidebar and all the notes get saved.
+* If we make any changes to the saved note, then we need to again press "save" button to save those changes.
+* We can create a new Project by pressing "Add New" button on the sidebar. This creates a new blank project to begin our work. 
+
+## What will you learn
+
+You will learn about following concepts:
+* Creating a basic React application with dependencies of React and React-DOM
+* Breaking the website into various re-usable components and creating them as jsx files
+* Basic concepts like 
+   * Inline styling for React elements
+   * Import, Export and modules
+   * React Props
+   * Mapping and loops
+   * Filter, Reduce and Find
+   * Arrow functions
+   * Hooks like useState and useEffect
+
+
+## Features that will be soon added
+
+Many features will be added to this project in the coming days-> 
+* launching on firebase
+* handle click on project list item -> get index and project item and setProject to matching index
+* handle background
+* handle Footer
+* handle scrolling of Sidebar
+* handle deleting projects 
+* work on drag and set position of sticky notes
+* make project list to toggle and increase the workspace
 
 
 <<<<<<< HEAD
