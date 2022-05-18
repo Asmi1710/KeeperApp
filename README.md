@@ -8,7 +8,7 @@ link-> https://blm2wr.csb.app/
 
 ## Deployed on Firebase
 
-link-> soon to be updated
+link-> https://note-it-6e0dd.web.app/
 
 ## Screenshot
 
